@@ -1,86 +1,60 @@
-# InsightEase Stock API Wrapper
+# Stock API Python by Insightease
 
 ## Overview
-This project provides a Python-based wrapper for interacting with the **InsightEase Stock API**. It allows users to fetch real-time stock market data, historical trends, financial reports, technical indicators, and more.
+This project integrates seamlessly with the **[Stock API Python by Insightease](https://insightease.com/docs/stock-api)** to retrieve and process stock market data. It offers a range of functionalities, including fetching stock symbols, retrieving real-time prices, analyzing historical data, and generating financial reports—all powered by Python.
 
-## Features
-- Fetch **latest stock prices** for different exchanges (NYSE, NASDAQ, etc.).
-- Retrieve **stock indices** from multiple countries.
-- Access **historical stock data**.
-- Fetch **stock dividends** and **company profiles**.
-- Get **performance and fundamental analysis** of stocks.
-- Retrieve **financial reports** (income, cash flow, balance sheet, earnings).
-- Obtain **technical indicators** such as pivot points, moving averages, and trading signals.
-- Perform **stock search queries**.
-- Fetch **country-specific stock analytics reports**.
+### Components:
+- `insightease_stock.py`: Implements the `insighteaseStock` class, which provides multiple API interaction methods.
+- `main.py`: Demonstrates the usage of `insighteaseStock` by calling various functions and printing the results.
+
+# Integration of the Insightease Stock API
+
+## Summary
+Insightease's Stock API provides features such as stock price retrieval, accessing the latest market values, fetching stock symbols, and leveraging Python to analyze historical data.
+
+### Elements:
+- The `insighteaseStock` class, which offers a number of API interaction methods, is implemented by `insightease_stock.py`.
+- `main.py`: Shows how to use `insighteaseStock` by executing different functions and displaying the output.
 
 ## Installation
-To use this project, clone the repository and install dependencies:
+
+### Necessities
+Make sure Python is installed; it is advised to use Python 3.6 or later. Install the necessary dependencies next:
+
+#### Necessary Library
+**Requests**: Making HTTP calls to the API and managing their answers are done with this library.
+
+Use the following command to install the dependencies:
 ```sh
-$ git clone https://github.com/your-repo/insightease-stock-api.git
-$ cd insightease-stock-api
-$ pip install -r requirements.txt
+pip install requests
 ```
 
-## Usage
-### 1. Set Up Your API Key
-You need an API key from [InsightEase API](https://insighteaseapi.com/dashboard). Update `main.py` with your key:
+## Application
+To make API requests and retrieve stock data, run the main script:
+```sh
+python main.py
+```
+
+## Use Case Example
+An example request to retrieve the most recent Apple (AAPL) stock price is as follows:
 ```python
+from insightease_stock import insighteaseStock
+
 stock_api = insighteaseStock(api_key='YOUR_API_KEY')
+latest_price = stock_api.get_stock_Latest_price(symbol='AAPL', exchange='NASDAQ')
+print("Latest Price of AAPL:", latest_price)
 ```
 
-### 2. Running the Main Script
-Execute the script to fetch stock data:
-```sh
-$ python main.py
-```
+## Notes
+- In order to manage API calls, the **requests** library is necessary.
+- Rather than being hardcoded, the API key ought to be safely stored.
+- Verify that the API base URL is accurate and current.
+- Since the return format is JSON, processing and parsing must be done correctly.
 
-### 3. Example API Calls
-#### Fetch Latest Stock Prices
-```python
-stock_latest_price = stock_api.get_stock_Latest_price(country='united-states', exchange='NYSE')
-print(stock_latest_price)
-```
-#### Fetch Stock Indices
-```python
-indices = stock_api.get_stocks_indices(country='japan,turkey')
-print(indices)
-```
-#### Fetch Historical Data
-```python
-history = stock_api.get_history({
-    'id': '10',
-    'period': '1d',
-    'from': '2024-10-30',
-    'to': '2024-10-31'
-})
-print(history)
-```
+### 🔗 Other Links
+- **Real-Time Stock Market Data:** [Stock Market Data](https://insightease.com/stock-data)
+- **Contact Us:** [Contact Insightease](https://insightease.com/contact)
 
-## Project Structure
-```
-insightease-stock-api/
-│-- main.py                # Main script to run API calls
-│-- insightease_stock.py   # API wrapper class
-│-- README.md              # Documentation
-│-- requirements.txt       # Dependencies
-```
-
-## Dependencies
-- Python 3.x
-- `requests` (for API calls)
-
-Install dependencies using:
-```sh
-$ pip install -r requirements.txt
-```
-
-## License
-This project is licensed under the MIT License.
-
-## Contributing
-Feel free to fork this project and submit pull requests for improvements!
-
-## Contact
-For questions or support, contact [your-email@example.com].
+## Permit
+The goal of this endeavor is education. For usage restrictions, please refer to the terms provided by the API provider.
 
