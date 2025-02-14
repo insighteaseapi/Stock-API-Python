@@ -5,7 +5,7 @@ from insightease_stock import insighteaseStock
 
 def main():
     # An API key, you can get free at https://insighteaseapi.com/dashboard
-    stock_api = insighteaseStock(api_key='TrN3njXhvR5Jkqz0VPZIOdHRrE')
+    stock_api = insighteaseStock(api_key='Your_api_key')
 
     stock_latest_price = stock_api.get_stock_Latest_price(country='united-states', exchange='NYSE')
     print("stock_latest_price:", stock_latest_price)
