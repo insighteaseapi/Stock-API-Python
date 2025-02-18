@@ -45,7 +45,7 @@ latest_price = stock_api.get_stock_Latest_price(symbol='AAPL', exchange='NASDAQ'
 print("Latest Price of AAPL:", latest_price)
 ```
 # Extract Exchange Data
-## Outout
+## Output
 | Exchange Name     | Exchange Name     | Exchange Name     | Exchange Name     |
 |-------------------|-------------------|-------------------|-------------------|
 | Tokyo             | NASDAQ            | Shenzhen          | NYSE              |
