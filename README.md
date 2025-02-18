@@ -44,17 +44,17 @@ stock_api = insighteaseStock(api_key='YOUR_API_KEY')
 latest_price = stock_api.get_stock_Latest_price(symbol='AAPL', exchange='NASDAQ')
 print("Latest Price of AAPL:", latest_price)
 ```
-Code to Extract Exchange Data
+# Code to Extract Exchange Data
 Use the following Python code to send a GET request to the API and extract the exchange data:
 import requests
 
-# Your API URL with the provided API key
+ Your API URL with the provided API key
 url = "https://api.insightease.com/stock/analytics?api_key=Your_api_key"
 
-# Send GET request to the API
+ Send GET request to the API
 response = requests.get(url)
 
-# Check if the response is successful
+ Check if the response is successful
 if response.status_code == 200:
     # Parse the response JSON
     data = response.json()
@@ -71,18 +71,19 @@ if response.status_code == 200:
         print("No exchange data found.")
 else:
     print(f"Failed to retrieve data. Status code: {response.status_code}")
+    
 ## Outout
   Exchanges of countries:
--Tokyo: 4075
--NASDAQ: 4061
--Shenzhen: 2548
--NYSE: 2374
--KOSDAQ: 1701
--Shanghai: 1599
--London: 1318
--BSE: 1269
--Hong Kong: 1244
--BM&FBovespa: 1143
+- Tokyo: 4075
+- NASDAQ: 4061
+- Shenzhen: 2548
+- NYSE: 2374
+- KOSDAQ: 1701
+- Shanghai: 1599
+- London: 1318
+- BSE: 1269
+- Hong Kong: 1244
+- BM&FBovespa: 1143
 ...
 
     
