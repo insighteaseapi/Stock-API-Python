@@ -1,7 +1,7 @@
 # Stock API Python by Insightease
 
 ## Overview
-This project integrates seamlessly with the **[Stock API Python by Insightease](https://insightease.com/docs/stock-api)** to retrieve and process stock market data. It offers a range of functionalities, including fetching stock symbols, retrieving real-time prices, analyzing historical data, and generating financial reports—all powered by Python.
+This project integrates seamlessly with the **[Stock API Python - Insightease](https://insightease.com/docs/stock-api)** to retrieve and process stock market data. It offers a range of functionalities, including fetching stock symbols, retrieving real-time prices, analyzing historical data, and generating financial reports—all powered by Python.
 
 ### Components:
 - `insightease_stock.py`: Implements the `insighteaseStock` class, which provides multiple API interaction methods.
