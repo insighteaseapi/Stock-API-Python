@@ -54,7 +54,7 @@ url = "https://api.insightease.com/stock/analytics?api_key=Your_api_key"
 response = requests.get(url)
 
 ## Check if the response is successful
-'''
+
 if response.status_code == 200:
      **Parse the response JSON**
     data = response.json()
@@ -71,7 +71,7 @@ if exchanges:
         print("No exchange data found.")
 else:
     print(f"Failed to retrieve data. Status code: {response.status_code}")
-'''    
+    
     
 ## Outout
   **Exchanges of countries:**
