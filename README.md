@@ -52,7 +52,7 @@ print("Latest Price of AAPL:", latest_price)
 - Since the return format is JSON, processing and parsing must be done correctly.
 
 ### 🔗 Other Links
-- **Real-Time Stock Market Data:** [Stock Market Data](https://insightease.com/stock-data)
+- **Stock documentation:** [Stock documentation](https://insightease.com/docs/stock-api#api-documentation)
 - **Contact Us:** [Contact Insightease](https://insightease.com/contact)
 
 ## Permit
