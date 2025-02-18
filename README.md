@@ -47,13 +47,14 @@ print("Latest Price of AAPL:", latest_price)
 # Code to Extract Exchange Data
 import requests
 
-# Your API URL with the provided API key
+- Your API URL with the provided API key
 url = "https://api.insightease.com/stock/analytics?api_key=Your_api_key"
 
 - Send GET request to the API
 response = requests.get(url)
 
-- Check if the response is successful
+## Check if the response is successful
+
 if response.status_code == 200:
      Parse the response JSON
     data = response.json()
