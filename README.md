@@ -50,18 +50,18 @@ import requests
 # Your API URL with the provided API key
 url = "https://api.insightease.com/stock/analytics?api_key=Your_api_key"
 
-# Send GET request to the API
+- Send GET request to the API
 response = requests.get(url)
 
-# Check if the response is successful
+- Check if the response is successful
 if response.status_code == 200:
-    # Parse the response JSON
+     Parse the response JSON
     data = response.json()
     
-    # Extract exchanges data
+     Extract exchanges data
     exchanges = data.get('response', {}).get('exchanges', {})
     
-    # Print the exchanges
+     Print the exchanges
     if exchanges:
         print("Exchanges of countries:")
         for exchange, count in exchanges.items():
