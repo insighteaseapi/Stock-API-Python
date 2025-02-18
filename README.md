@@ -44,7 +44,7 @@ stock_api = insighteaseStock(api_key='YOUR_API_KEY')
 latest_price = stock_api.get_stock_Latest_price(symbol='AAPL', exchange='NASDAQ')
 print("Latest Price of AAPL:", latest_price)
 ```
-## Code to Extract Exchange Data
+Code to Extract Exchange Data
 Use the following Python code to send a GET request to the API and extract the exchange data:
 import requests
 
