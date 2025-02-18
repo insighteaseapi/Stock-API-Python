@@ -56,8 +56,11 @@ response = requests.get(url)
 ## Check if the response is successful
 
 if response.status_code == 200:
+
      Parse the response JSON
+     
     data = response.json()
+    
 Extract exchanges data
 
 exchanges = data.get('response', {}).get('exchanges', {})
