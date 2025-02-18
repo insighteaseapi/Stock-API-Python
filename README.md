@@ -56,13 +56,13 @@ response = requests.get(url)
 ## Check if the response is successful
 
 if response.status_code == 200:
-     **Parse the response JSON**
+     Parse the response JSON
     data = response.json()
-**Extract exchanges data**
+Extract exchanges data
 
 exchanges = data.get('response', {}).get('exchanges', {})
 
-**Print the exchanges**
+Print the exchanges
 if exchanges:
         print("Exchanges of countries:")
         for exchange, count in exchanges.items():
