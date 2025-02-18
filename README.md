@@ -55,7 +55,7 @@ response = requests.get(url)
 
 ## Check if the response is successful
 
-if response.status_code == 200:
+'''if response.status_code == 200:
      Parse the response JSON
     data = response.json()
     
@@ -70,7 +70,8 @@ if response.status_code == 200:
     else:
         print("No exchange data found.")
 else:
-    print(f"Failed to retrieve data. Status code: {response.status_code}")
+    print(f"Failed to retrieve data. Status code: {response.status_code}")'''
+    
 ## Outout
   **Exchanges of countries:**
 - Tokyo: 4075
