@@ -52,8 +52,8 @@ print("Latest Price of AAPL:", latest_price)
 - Since the return format is JSON, processing and parsing must be done correctly.
 
 ### 🔗 Other Links
-- **Stock documentation:** [Stock documentation](https://insightease.com/docs/stock-api#api-documentation)
-- **Contact Us:** [Contact Insightease](https://insightease.com/contact)
+- **Stock Documentation:** [Stock Documentation](https://insightease.com/docs/stock-api#api-documentation)
+- **Contact Us:** [Website](https://insightease.com)
 
 ## Permit
 The goal of this endeavor is education. For usage restrictions, please refer to the terms provided by the API provider.
