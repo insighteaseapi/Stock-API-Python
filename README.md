@@ -71,8 +71,6 @@ if response.status_code == 200:
         print("No exchange data found.")
 else:
     print(f"Failed to retrieve data. Status code: {response.status_code}")
-
-    
 ## Outout
   **Exchanges of countries:**
 - Tokyo: 4075
