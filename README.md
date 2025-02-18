@@ -72,74 +72,26 @@ else:
     print(f"Failed to retrieve data. Status code: {response.status_code}")
     
 ## Outout
-  | Exchange Name      |
-|--------------------|
-| Tokyo              |
-| NASDAQ             |
-| Shenzhen           |
-| NYSE               |
-| KOSDAQ             |
-| Shanghai           |
-| London             |
-| BSE                |
-| Hong Kong          |
-| BM&FBovespa        |
-| Thailand           |
-| Kuala Lumpur       |
-| Stockholm          |
-| Paris              |
-| Jakarta            |
-| Seoul              |
-| Frankfurt          |
-| Moscow             |
-| Toronto            |
-| TSXV               |
-| Singapore          |
-| OTC Markets        |
-| NSE                |
-| Mexico             |
-| Istanbul           |
-| Karachi            |
-| Johannesburg       |
-| Xetra              |
-| Philippines        |
-| Switzerland        |
-| Saudi Arabia       |
-| Madrid             |
-| Berlin             |
-| NYSE Amex          |
-| Helsinki           |
-| Copenhagen         |
-| Amsterdam          |
-| BIVA               |
-| Spotlight          |
-| Taiwan             |
-| Abu Dhabi          |
-| NGM                |
-| Dubai              |
-| Ireland            |
-| Brussels           |
-| Dusseldorf         |
-| B3                 |
-| CSE                |
-| SOMA               |
-| Iceland            |
-| LATIBEX            |
-| Hamburg            |
-| Oslo               |
-| Sydney             |
-| Lisbon             |
-| TradeGate          |
-| Milan              |
-| Egypt              |
-| BATS Europe        |
-| NEO                |
-| Munich             |
-| Ho Chi Minh        |
-| Stuttgart          |
-| KONEX              |
-| CBOE Canada        |
-| Luxembourg         |
+| Exchange Name     | Exchange Name     | Exchange Name     | Exchange Name     |
+|-------------------|-------------------|-------------------|-------------------|
+| Tokyo             | NASDAQ            | Shenzhen          | NYSE              |
+| KOSDAQ            | Shanghai          | London            | BSE               |
+| Hong Kong         | BM&FBovespa       | Thailand          | Kuala Lumpur      |
+| Stockholm         | Paris             | Jakarta           | Seoul             |
+| Frankfurt         | Moscow            | Toronto           | TSXV              |
+| Singapore         | OTC Markets       | NSE               | Mexico            |
+| Istanbul          | Karachi           | Johannesburg      | Xetra             |
+| Philippines       | Switzerland       | Saudi Arabia      | Madrid            |
+| Berlin            | NYSE Amex         | Helsinki          | Copenhagen        |
+| Amsterdam         | BIVA              | Spotlight         | Taiwan            |
+| Abu Dhabi         | NGM               | Dubai             | Ireland           |
+| Brussels          | Dusseldorf        | B3                | CSE               |
+| SOMA              | Iceland           | LATIBEX           | Hamburg           |
+| Oslo              | Sydney            | Lisbon            | TradeGate         |
+| Milan             | Egypt             | BATS Europe       | NEO               |
+| Munich            | Ho Chi Minh       | Stuttgart         | KONEX             |
+| CBOE Canada       | Luxembourg        |                   |                   |
+
 
     
 
